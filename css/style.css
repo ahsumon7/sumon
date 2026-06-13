@@ -3564,12 +3564,19 @@ p {
 	border-radius: 18px;
 	overflow-y: auto;
 
+	scrollbar-width: none;        /* Firefox */
+	-ms-overflow-style: none;     /* IE/old Edge */
+
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 
+}
+
+.beny_tm_leftpart_wrap::-webkit-scrollbar {
+	display: none;            /* Chrome/Safari */
 }
 
 .beny_tm_leftpart_wrap .leftpart_inner {
