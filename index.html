@@ -791,18 +791,22 @@
 						</div>
 						<div class="beny_tm_contact_wrap">
 							<div class="main_input_wrap">
-								<form action="sam.php" method="post" class="contact_form" id="contact_form">
+								<form action="https://api.web3forms.com/submit" method="post" class="contact_form" id="contact_form">
+									<input type="hidden" name="access_key" value="91bc7955-f11c-4005-8f1e-3fd1319c2e54">
+									<input type="hidden" name="subject" value="New message from portfolio contact form">
+									<input type="hidden" name="from_name" value="Portfolio — ahsumon7.github.io">
+									<input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 									<div class="returnmessage"
 										data-success="Your message has been received, We will contact you soon."></div>
 									<div class="empty_notice"><span>Please Fill Required Fields</span></div>
 									<div class="wrap wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.2s">
-										<input id="name" type="text" placeholder="Your Name">
+										<input id="name" name="name" type="text" placeholder="Your Name">
 									</div>
 									<div class="wrap wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
-										<input id="email" type="text" placeholder="Your Email">
+										<input id="email" name="email" type="email" placeholder="Your Email">
 									</div>
 									<div class="wrap wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.6s">
-										<textarea id="message" placeholder="Your Message"></textarea>
+										<textarea id="message" name="message" placeholder="Your Message"></textarea>
 									</div>
 									<div class="beny_tm_button wow fadeIn" data-wow-duration="1.2s"
 										data-wow-delay="0.8s">
